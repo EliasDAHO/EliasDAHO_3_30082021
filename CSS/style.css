@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+   
+  
+  html {
+    
+    -webkit-overflow-x: hidden;
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: "roboto", sans-serif;
+  }
