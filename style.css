@@ -20,45 +20,27 @@
     margin: auto;
     padding: 18px;
   }
-  
-  header a {
-    margin: auto;
-    margin-left: 12px;
-  }
-  header .logo-menu {
-    width: 64%;
-  margin: auto;
-  padding: 18px;
-  padding-left: 0;
-  margin-left: 0;
-}
-
-#search {
+  #search {
   text-align: center;
   background-color: #f6f6f6;
   width: 100%;
-}
-#search .search-subtitle {
-  margin: 30px 15px;
-}
-#search form {
+  }
+  #search form {
   background: linear-gradient(180deg, lightgray 0%, #eaeaea 12%);
-  
-}
-#search form .search-searchfield {
-  width: 100%;
-  
+  }
+  .searchfield {
+  width: 120px;
+  padding: 16px 5px;
   font-weight: bold;
   border: none;
   background-color: transparent;
 }
 #search .search-title {
-  font-size: 1.55rem;
+  font-size: 2em;
   margin: 30px 30px 15px 30px;
-  
 }
 #search .search-subtitle {
-  font-size: 1rem;
+  font-size: 1.2em;
   font-weight: normal;
   text-transform: initial;
 }
@@ -83,8 +65,8 @@
 }
 #functionning h2 {
   margin: 40px 20px 15px 30px;
-}
-#functionning ol li {
+  }
+#functionning ul li {
   width: 83%;
   background-color: #f6f6f6;
   box-shadow: 3px 3px 10px #bfbfbf;
@@ -93,21 +75,32 @@
   margin: 12px;
   font-size: 0.95rem;
   position: relative;
+  list-style-type: none;
 }
-
-.restaurants .restaurants-cards p {
+.restaurants h2 {
+   margin: 40px 20px 15px 35px;
+}
+.restaurants-cards h3 {
+  font-size: 1.2em;
+  margin: 8px 20px 0px 15px;
+  color: black;
+}
+a{
+  text-decoration: none;
+}
+.restaurants-cards p {
   font-size: 1em;
   margin: 5px 20px 0px 15px;
+  color: #0d0d0d;
 }
 .heart {
-  
   color: #777777;
   position: absolute;
   bottom: 10px;
   right: 25px;
   font-size: 1.6em
 }
- .box-restaurant {
+.box-restaurant {
   position: relative;
   width: 95%;
   height: 100%;
@@ -135,9 +128,7 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-
-
- .new {
+.new {
   color: #2c9c81;
   background-color: #99e2d0;
   width: -webkit-fit-content;
@@ -151,7 +142,6 @@
   font-weight: bold;
   border-radius: 2px;
 }
-
 footer {
   padding: 20px;
   background-color: #353535;
