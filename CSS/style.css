@@ -12,3 +12,50 @@
   body {
     font-family: "roboto", sans-serif;
   }
+  header {
+    display: flex;
+  }
+  header .logo-home {
+    width: 64%;
+    margin: auto;
+    padding: 18px;
+  }
+  
+  header a {
+    margin: auto;
+    margin-left: 12px;
+  }
+  header .logo-menu {
+    width: 64%;
+  margin: auto;
+  padding: 18px;
+  padding-left: 0;
+  margin-left: 0;
+}
+#background-image {
+  width: 100%;
+}
+  footer {
+    padding: 20px;
+    background-color: #353535;
+    margin-top: 50px;
+  }
+  footer h2 {
+    color: #ffffff;
+    font-family: "Shrikhand", cursive ;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  footer ul {
+    padding: 0;
+  }
+  footer ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  footer ul li  {
+    color: #ffffff;
+  }
+  footer ul li .fas {
+    margin-right: 10px;
+  }
