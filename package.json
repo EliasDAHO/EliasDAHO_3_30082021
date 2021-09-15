@@ -1,0 +1,19 @@
+{
+  "name": "eliasdaho_3_30082021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliasDAHO/EliasDAHO_3_30082021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EliasDAHO/EliasDAHO_3_30082021/issues"
+  },
+  "homepage": "https://github.com/EliasDAHO/EliasDAHO_3_30082021#readme"
+}
