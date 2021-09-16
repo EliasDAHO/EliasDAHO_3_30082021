@@ -333,7 +333,7 @@ footer ul li .fas {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 455px) and (max-width: 768px) {
   header .logo-home {
     width: 50%;
   }
@@ -349,6 +349,21 @@ footer ul li .fas {
     position: absolute;
     left: -1%;
     top: 30%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  header .logo-home {
+    width: 70%;
+    margin: auto;
+    padding: 18px;
+    object-fit: cover;
+    -o-object-fit: cover;
+  }
+
+  #functionning ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
