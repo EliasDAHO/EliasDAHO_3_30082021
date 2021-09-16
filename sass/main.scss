@@ -182,6 +182,16 @@
 #functionning h2 {
   margin: 40px 20px 15px 30px;
   }
+
+  #functionning ul {
+    
+    list-style-type: none;
+    counter-reset: liste-couleur;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+  
  
 #functionning ul li {
   width: 80%;
@@ -192,11 +202,23 @@
   margin: 12px;
   font-size: 0.95rem;
   position: relative;
-  list-style-type: none;
+  list-style-type:none ;
+  
 }
 
-
-#functionning ul li:hover .step {
+#functionning ul li::before {
+  content: counter(liste-couleur);
+  counter-increment: liste-couleur;
+  color: #ffffff;
+  font-weight: bolder;
+  background-color: #9256dc;
+  border-radius: 100px;
+  padding: 5px 9px;
+  position: absolute;
+  left: -3vw;
+  top: 5vw;
+}
+#functionning ul li :hover  {
   color: #9256dc;
 }
 #functionning .step {
