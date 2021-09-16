@@ -60,7 +60,7 @@
 
 .loading-spinner {
   width: 100%;
-  height: 120vh;
+  height: 110vh;
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   z-index: 9999;
@@ -111,12 +111,7 @@
   animation: spin-reverse 400ms linear infinite;
 }
 
- 
-
-
-
-
-@-webkit-keyframes spin {
+ @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -190,6 +185,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 1;
+    
    }
   
  
@@ -209,7 +206,7 @@
 #functionning ul li::before {
   content: counter(liste-couleur);
   counter-increment: liste-couleur;
-  color: #ffffff;
+  color: white;
   font-weight: bolder;
   background-color: #9256dc;
   border-radius: 100px;
@@ -218,15 +215,16 @@
   left: -3vw;
   top: 5vw;
 }
-#functionning ul li :hover  {
-  color: #9256dc;
+#functionning ul li:hover  {
+  background-color:#f5edff ;
+  transition: 0.3s
 }
 #functionning .step {
   padding: 0 14px 0 8px;
   font-weight: bold;
 }
 .restaurants h2 {
-  margin-left: 40px;
+  margin: 40px 20px 15px 30px;
 }
 .restaurants-cards h3 {
   font-size: 1.2em;
