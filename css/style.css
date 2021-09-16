@@ -350,17 +350,6 @@ footer ul li .fas {
     left: -1%;
     top: 30%;
   }
-
-  .restaurants-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .restaurants-cards .box-restaurant {
-    width: 42%;
-    height: 50%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
