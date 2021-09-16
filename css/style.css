@@ -351,20 +351,5 @@ footer ul li .fas {
     top: 30%;
   }
 }
-@media screen and (max-width: 1440px) {
-  header .logo-home {
-    width: 70%;
-    margin: auto;
-    padding: 18px;
-    object-fit: cover;
-    -o-object-fit: cover;
-  }
-
-  #functionning ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
