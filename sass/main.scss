@@ -294,9 +294,6 @@ a{
   font-weight: bold;
   border-radius: 2px;
 }
-
-
-
 footer {
   padding: 20px;
   background-color: #353535;
@@ -325,7 +322,7 @@ footer ul li .fas {
 }
 
 
-@media screen  and (max-width: 768px) {
+@media screen and (min-width:455px) and (max-width: 768px) {
   header .logo-home {
     width: 50%;
   }
@@ -342,7 +339,26 @@ footer ul li .fas {
     top: 30%;
   }
   
+  
   }
+  @media screen and (max-width: 1024px){
+
+  }
+  @media screen and (max-width: 1440px) {
+    header .logo-home {
+      width: 70%;
+      margin: auto;
+      padding: 18px;
+      object-fit: cover;
+      -o-object-fit: cover;
+    }
+    #functionning ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+  }
+    
   
     
 
