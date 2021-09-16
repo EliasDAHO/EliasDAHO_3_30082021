@@ -174,6 +174,8 @@
     z-index: -1;
   }
 }
+
+
 #functionning h2 {
   margin: 40px 20px 15px 30px;
   }
@@ -212,12 +214,15 @@
   border-radius: 100px;
   padding: 5px 9px;
   position: absolute;
-  left: -3vw;
-  top: 5vw;
+  left: -3%;
+  top: 29%;
 }
 #functionning ul li:hover  {
   background-color:#f5edff ;
   transition: 0.3s
+}
+#functionning ul :hover  {
+  color: #9256dc;
 }
 #functionning .step {
   padding: 0 14px 0 8px;
@@ -246,6 +251,7 @@ a{
   right: 25px;
   font-size: 1.6em
 }
+
 .box-restaurant {
   position: relative;
   width: 95%;
@@ -288,6 +294,9 @@ a{
   font-weight: bold;
   border-radius: 2px;
 }
+
+
+
 footer {
   padding: 20px;
   background-color: #353535;
@@ -305,14 +314,34 @@ footer ul {
 footer ul li {
   list-style-type: none;
   margin-bottom: 10px;
+  
 }
 footer ul li a {
   color: #ffffff;
+  
 }
 footer ul li .fas {
   margin-right: 10px;
 }
 
+
+@media screen and (min-width: 768px) {
+  header .logo-home {
+    width: 50%;
+  }
+  #functionning ul li::before {
+    content: counter(liste-couleur);
+    counter-increment: liste-couleur;
+    color: white;
+    font-weight: bolder;
+    background-color: #9256dc;
+    border-radius: 100px;
+    padding: 5px 9px;
+    position: absolute;
+    left: -1%;
+    top: 30%;
+  }
+}
 
   
  
