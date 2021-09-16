@@ -211,13 +211,17 @@ header .logo-home {
   border-radius: 100px;
   padding: 5px 9px;
   position: absolute;
-  left: -3vw;
-  top: 5vw;
+  left: -3%;
+  top: 29%;
 }
 
 #functionning ul li:hover {
   background-color: #f5edff;
   transition: 0.3s;
+}
+
+#functionning ul :hover {
+  color: #9256dc;
 }
 
 #functionning .step {
@@ -327,6 +331,25 @@ footer ul li a {
 
 footer ul li .fas {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  header .logo-home {
+    width: 50%;
+  }
+
+  #functionning ul li::before {
+    content: counter(liste-couleur);
+    counter-increment: liste-couleur;
+    color: white;
+    font-weight: bolder;
+    background-color: #9256dc;
+    border-radius: 100px;
+    padding: 5px 9px;
+    position: absolute;
+    left: -1%;
+    top: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
