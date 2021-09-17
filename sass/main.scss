@@ -68,13 +68,14 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: transition 3s ease both;
-          animation: transition 3s ease both;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-animation: transition 5s ease both;
+  animation: transition 5s ease both;
+  opacity: 1;
 }
 
 .loading-spinner .loader{
@@ -107,8 +108,9 @@
   border: 5px solid transparent;
   border-right-color: #FF79DA;
   border-left-color: #FF79DA;
-  -webkit-animation: spin-reverse 400ms linear infinite;
-  animation: spin-reverse 400ms linear infinite;
+  -webkit-animation: spin-reverse 500ms linear infinite;
+  animation: spin-reverse 500ms linear infinite;
+  
 }
 
  @-webkit-keyframes spin {
@@ -193,7 +195,7 @@
   
  
 #functionning ul li {
-  width: 80%;
+  width: 76%;
   background-color: #f6f6f6;
   box-shadow: 3px 3px 10px #bfbfbf;
   padding: 25px;
@@ -251,6 +253,9 @@ a{
   right: 25px;
   font-size: 1.6em
 }
+
+
+
 
 .box-restaurant {
   position: relative;
@@ -311,41 +316,37 @@ footer ul {
 footer ul li {
   list-style-type: none;
   margin-bottom: 10px;
-  
 }
 footer ul li a {
-  color: #ffffff;
-  
+  color: #ffffff;  
 }
 footer ul li .fas {
   margin-right: 10px;
 }
 
 
-@media screen and (min-width:455px) and (max-width: 768px) {
+@media screen  and (min-width: 428px){
+
+}
+
+
+
+
+@media screen  and (min-width: 768px) {
   header .logo-home {
     width: 50%;
   }
-  #functionning ul li::before {
-    content: counter(liste-couleur);
-    counter-increment: liste-couleur;
-    color: white;
-    font-weight: bolder;
-    background-color: #9256dc;
-    border-radius: 100px;
-    padding: 5px 9px;
-    position: absolute;
-    left: -1%;
-    top: 30%;
-  }
+  
+  
   
   
   }
-  @media screen and (max-width: 1024px){
-
-  }
-  @media screen and (max-width: 1440px) {
+  @media screen and (min-width: 1024px){
     
+  }
+  @media screen and (min-width: 1440px) {
+    
+   
     
     
   }
