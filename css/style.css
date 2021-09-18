@@ -250,12 +250,28 @@ a {
   color: #0d0d0d;
 }
 
-.heart {
+.fa-heart {
   color: #777777;
   position: absolute;
   bottom: 10px;
   right: 25px;
   font-size: 1.6em;
+}
+
+.fa-heart {
+  background-color: #ffffff;
+  padding: 0.2em;
+}
+
+.fa-heart::before {
+  content: "\f004";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+
+.fa-heart:hover::before {
+  color: red;
+  cursor: pointer;
 }
 
 .box-restaurant {
