@@ -385,4 +385,59 @@ footer ul li .fas {
     width: 50%;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  #functionning ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .restaurants-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .box-restaurant {
+    width: 42%;
+    height: 50%;
+  }
+  .image-restaurant-enchantée {
+    height: 405px;
+  }
+  #functionning ul {
+    margin-right: 40px;
+  }
+  #functionning ul li::before {
+    left: -1vw;
+    top: 1.8vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #search .search-title {
+    font-size: 1.9rem;
+  }
+  #search .search-subtitle {
+    font-size: 1.25rem;
+  }
+  #search .search-button {
+    font-size: 1.1rem;
+  }
+  #functionning ul li::before {
+    left: -1vw;
+    top: 1.5vw;
+  }
+}
 /*# sourceMappingURL=main.css.map */
