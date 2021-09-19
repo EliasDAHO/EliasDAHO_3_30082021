@@ -362,5 +362,54 @@ footer ul li .fas {
     width: 50%;
   }
 }
+@media screen and (min-width: 1024px) {
+  #functionning ul {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+  }
+
+  .restaurants-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box-restaurant {
+    width: 42%;
+    height: 50%;
+  }
+
+  .image-restaurant-enchantée {
+    height: 405px;
+  }
+
+  #functionning ul {
+    margin-right: 40px;
+  }
+
+  #functionning ul li::before {
+    left: -1vw;
+    top: 1.8vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #search .search-title {
+    font-size: 1.9rem;
+  }
+
+  #search .search-subtitle {
+    font-size: 1.25rem;
+  }
+
+  #search .search-button {
+    font-size: 1.1rem;
+  }
+
+  #functionning ul li::before {
+    left: -1vw;
+    top: 1.5vw;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
