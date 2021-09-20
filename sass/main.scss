@@ -254,12 +254,24 @@ a{
   margin: 5px 20px 0px 15px;
   color: #0d0d0d;
 }
-.fa-heart {
-  color: #777777;
+.far {
+ 
+  color:#777777;
   position: absolute;
-  bottom: 21px;
+  bottom: 24px;
   right: 25px;
   font-size: 1.6em;
+}
+.fa-heart::before {
+  
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+
+.fa-heart ::before{
+  background-color: red;
+  cursor: pointer;
+  
 }
 
 
@@ -327,7 +339,7 @@ footer ul li .fas {
 }
 
 
-@media screen  and (min-width: 600px){
+@media screen  and (min-width: 577px){
   
   .restaurants-cards {
     display: flex;
@@ -340,8 +352,8 @@ footer ul li .fas {
     margin: 10px 15px;
   }
   .restaurants-cards .far {
-    bottom: 4vw;
-    right: 4vw;
+    bottom: 3vw;
+    right: 3vw;
   }
 
 }
@@ -353,21 +365,28 @@ footer ul li .fas {
   header .logo-home {
     width: 50%;
   }
-  
-
-
-
-  
-  
-
-  
-  
-  
-  
+  #functionning ul li::before {
+    left: -2%;
+    top: 29%;
   }
+  .restaurants-cards .box-restaurant {
+    width: 42%;
+    height: 30vw;
+    margin: 10px 15px;
+  }
+  .restaurants-cards .far {
+    bottom: 3vw;
+    right: 2vw;
+  }
+  
+ 
+ 
+}
   @media screen and (min-width: 1024px){
     
-  
+    header .logo-home {
+      width: 40%;
+    }
   
   #functionning ul {
       flex-direction: row;
@@ -376,11 +395,15 @@ footer ul li .fas {
       
      }
      #functionning ul li::before {
-      left: -1vw;
-      top: 1.8vw;
+      left: -3%;
+      top: 29%;
     }
     .restaurants .box-restaurant {
-      height: 28vw;
+      height: 20vw;
+    }
+    .restaurants-cards .far {
+      bottom: 2vw;
+      right: 2vw;
     }
     
     
@@ -390,7 +413,7 @@ footer ul li .fas {
     #search form .searchfield {
       width: 15vw;
       padding: 2vw 2vw;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
    
     #search .search-title {
@@ -400,7 +423,7 @@ footer ul li .fas {
       font-size: 1.25rem;
     }
     #search .search-button {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
     #functionning h2 {
       font-size: 1.9rem;
@@ -410,8 +433,10 @@ footer ul li .fas {
       top: 29%;
     }
     .restaurants .box-restaurant {
-      height: 22vw;
+      height: 20vw;
+      width: 47%;
     }
+    
 
    
    
