@@ -256,12 +256,22 @@ a {
   color: #0d0d0d;
 }
 
-.fa-heart {
+.far {
   color: #777777;
   position: absolute;
-  bottom: 21px;
+  bottom: 24px;
   right: 25px;
   font-size: 1.6em;
+}
+
+.fa-heart::before {
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+
+.fa-heart ::before {
+  background-color: red;
+  cursor: pointer;
 }
 
 .restaurants .box-restaurant {
@@ -329,7 +339,7 @@ footer ul li .fas {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 577px) {
   .restaurants-cards {
     display: flex;
     flex-wrap: wrap;
@@ -343,16 +353,36 @@ footer ul li .fas {
   }
 
   .restaurants-cards .far {
-    bottom: 4vw;
-    right: 4vw;
+    bottom: 3vw;
+    right: 3vw;
   }
 }
 @media screen and (min-width: 768px) {
   header .logo-home {
     width: 50%;
   }
+
+  #functionning ul li::before {
+    left: -2%;
+    top: 29%;
+  }
+
+  .restaurants-cards .box-restaurant {
+    width: 42%;
+    height: 30vw;
+    margin: 10px 15px;
+  }
+
+  .restaurants-cards .far {
+    bottom: 3vw;
+    right: 2vw;
+  }
 }
 @media screen and (min-width: 1024px) {
+  header .logo-home {
+    width: 40%;
+  }
+
   #functionning ul {
     flex-direction: row;
     align-items: center;
@@ -360,19 +390,24 @@ footer ul li .fas {
   }
 
   #functionning ul li::before {
-    left: -1vw;
-    top: 1.8vw;
+    left: -3%;
+    top: 29%;
   }
 
   .restaurants .box-restaurant {
-    height: 28vw;
+    height: 20vw;
+  }
+
+  .restaurants-cards .far {
+    bottom: 2vw;
+    right: 2vw;
   }
 }
 @media screen and (min-width: 1440px) {
   #search form .searchfield {
     width: 15vw;
     padding: 2vw 2vw;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   #search .search-title {
@@ -384,7 +419,7 @@ footer ul li .fas {
   }
 
   #search .search-button {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   #functionning h2 {
@@ -397,7 +432,8 @@ footer ul li .fas {
   }
 
   .restaurants .box-restaurant {
-    height: 22vw;
+    height: 20vw;
+    width: 47%;
   }
 }
 
