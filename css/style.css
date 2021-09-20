@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
 }
@@ -260,56 +259,29 @@ a {
 .fa-heart {
   color: #777777;
   position: absolute;
-  bottom: 10px;
+  bottom: 21px;
   right: 25px;
   font-size: 1.6em;
 }
 
-.fa-heart {
-  background-color: #ffffff;
-  padding: 0.2em;
-}
-
-.fa-heart::before {
-  content: "\f004";
-  font-weight: bold;
-  transition: color 1s ease-out;
-}
-
-.fa-heart:hover::before {
-  color: red;
-  cursor: pointer;
-}
-
-.box-restaurant {
+.restaurants .box-restaurant {
   position: relative;
-  width: 95%;
-  height: 100%;
+  width: 90%;
+  height: 60vw;
   margin: auto;
   margin-top: 25px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px #bfbfbf;
   background-color: #ffffff;
-  -webkit-animation: restaurants 2.5s ease-in-out 0.6s forwards;
-  animation: restaurants 2.5s ease-in-out 0.6s forwards;
 }
 
-.image-restaurant {
+.restaurants .image-restaurant {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
-  height: 40%;
+  height: 70%;
   -o-object-fit: cover;
   object-fit: cover;
-}
-
-.image-restaurant-enchantée {
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 100%;
-  height: 250px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 
 .new {
@@ -357,6 +329,24 @@ footer ul li .fas {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 600px) {
+  .restaurants-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .restaurants-cards .box-restaurant {
+    width: 42%;
+    height: 36vw;
+    margin: 10px 15px;
+  }
+
+  .restaurants-cards .far {
+    bottom: 4vw;
+    right: 4vw;
+  }
+}
 @media screen and (min-width: 768px) {
   header .logo-home {
     width: 50%;
@@ -369,31 +359,22 @@ footer ul li .fas {
     display: flex;
   }
 
-  .restaurants-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .box-restaurant {
-    width: 42%;
-    height: 50%;
-  }
-
-  .image-restaurant-enchantée {
-    height: 405px;
-  }
-
-  #functionning ul {
-    margin-right: 40px;
-  }
-
   #functionning ul li::before {
     left: -1vw;
     top: 1.8vw;
   }
+
+  .restaurants .box-restaurant {
+    height: 28vw;
+  }
 }
 @media screen and (min-width: 1440px) {
+  #search form .searchfield {
+    width: 15vw;
+    padding: 2vw 2vw;
+    font-size: 1.2rem;
+  }
+
   #search .search-title {
     font-size: 1.9rem;
   }
@@ -406,9 +387,17 @@ footer ul li .fas {
     font-size: 1.1rem;
   }
 
+  #functionning h2 {
+    font-size: 1.9rem;
+  }
+
   #functionning ul li::before {
-    left: -1vw;
-    top: 1.5vw;
+    left: -2%;
+    top: 29%;
+  }
+
+  .restaurants .box-restaurant {
+    height: 22vw;
   }
 }
 
