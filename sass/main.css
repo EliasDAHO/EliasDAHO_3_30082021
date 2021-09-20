@@ -70,7 +70,7 @@ header .logo-home {
 }
 
 .search-button:hover {
-  opacity: 0.65;
+  opacity: 0.55;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-box-shadow: 3px 3px 10px #0d0d0d;
@@ -99,7 +99,7 @@ header .logo-home {
 }
 
 .loading-spinner .loader {
-  border-radius: 50px;
+  border-radius: 60px;
   border: 5px solid transparent;
   display: inline-block;
   position: relative;
@@ -107,10 +107,10 @@ header .logo-home {
   left: 5px;
   top: 5px;
   bottom: 5px;
-  border-radius: 50px;
+  border-radius: 60px;
   width: 100px;
   height: 100px;
-  border: 5px solid transparent;
+  border: 8px solid transparent;
   border-top-color: #9356DC;
   border-bottom-color: #9356DC;
   -webkit-animation: spin 800ms linear infinite;
@@ -120,12 +120,12 @@ header .logo-home {
 .loading-spinner .loader:after {
   content: '';
   position: absolute;
-  right: 5px;
-  left: 5px;
-  top: 5px;
-  bottom: 5px;
+  right: 10px;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
   border-radius: 50px;
-  border: 5px solid transparent;
+  border: 8px solid transparent;
   border-right-color: #FF79DA;
   border-left-color: #FF79DA;
   -webkit-animation: spin-reverse 500ms linear infinite;
@@ -285,14 +285,8 @@ a {
   font-size: 1.6em;
 }
 
-.fa-heart::before {
-  font-weight: bold;
-  -webkit-transition: color 1s ease-out;
-  transition: color 1s ease-out;
-}
-
 .fa-heart ::before {
-  background-color: red;
+  color: red;
   cursor: pointer;
 }
 
@@ -407,6 +401,15 @@ footer ul li .fas {
   header .logo-home {
     width: 40%;
   }
+  .searchfield {
+    width: 170px;
+  }
+  .search-button {
+    font-size: 1rem;
+  }
+  form input {
+    font-size: 1rem;
+  }
   #functionning ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -425,6 +428,12 @@ footer ul li .fas {
   }
   .restaurants .box-restaurant {
     height: 20vw;
+  }
+  .box-restaurant:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
   }
   .restaurants-cards .far {
     bottom: 2vw;
