@@ -256,17 +256,43 @@ a {
   color: #0d0d0d;
 }
 
-.far {
-  color: #777777;
+.heart-empty {
   position: absolute;
-  bottom: 24px;
-  right: 25px;
+  bottom: 18px;
+  right: 24px;
+  font-size: 1.6em;
+  color: #777777;
+}
+
+.heart-full {
+  position: absolute;
+  bottom: 18px;
+  right: 24px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1;
   font-size: 1.6em;
 }
 
-.fa-heart ::before {
-  color: red;
+.heart-empty:hover {
+  animation: vide 1s forwards linear;
   cursor: pointer;
+}
+
+.heart-empty:hover + i {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 1s linear;
+}
+
+.heart-full {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+  transform-origin: bottom;
+  transform: scale(0);
 }
 
 .restaurants .box-restaurant {
@@ -334,6 +360,17 @@ footer ul li .fas {
   margin-right: 10px;
 }
 
+#background-image {
+  width: 100%;
+}
+
+.menu-lanoteenchantee {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 300px;
+  height: 200px;
+}
+
 @media screen and (min-width: 577px) {
   .restaurants-cards {
     display: flex;
@@ -345,11 +382,6 @@ footer ul li .fas {
     width: 42%;
     height: 36vw;
     margin: 10px 15px;
-  }
-
-  .restaurants-cards .far {
-    bottom: 3vw;
-    right: 3vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -366,11 +398,6 @@ footer ul li .fas {
     width: 42%;
     height: 30vw;
     margin: 10px 15px;
-  }
-
-  .restaurants-cards .far {
-    bottom: 3vw;
-    right: 2vw;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -412,11 +439,6 @@ footer ul li .fas {
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-  }
-
-  .restaurants-cards .far {
-    bottom: 2vw;
-    right: 2vw;
   }
 }
 @media screen and (min-width: 1440px) {
