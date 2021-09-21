@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     
@@ -395,7 +394,10 @@ footer ul li .fas {
     height: 30vw;
     margin: 10px 15px;
   }
-  
+  footer {
+    text-align: center;
+  }
+
   
   
  
@@ -407,13 +409,16 @@ footer ul li .fas {
       width: 40%;
     }
     .searchfield {
-      width: 170px;
+      width: 220px;
     }
     .search-button {
       font-size: 1rem;
     }
     form input{
       font-size: 1rem;
+    }
+    footer{
+      font-size: 1.2rem;
     }
     
   
@@ -445,7 +450,7 @@ footer ul li .fas {
   }
   @media screen and (min-width: 1440px) {
     #search form .searchfield {
-      width: 15vw;
+      width: 17vw;
       padding: 2vw 2vw;
       font-size: 1.3rem;
     }
