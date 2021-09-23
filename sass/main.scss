@@ -1,14 +1,18 @@
 @import "./utils/_variables";
-@import "./base/base";
+@import "./base/_base";
+@import "./layout/footer\ "; 
   
-  header {
-    display: flex;
-  }
-  header .logo-home {
-    width: 64%;
-    margin: auto;
-    padding: 18px;
-  }
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo-home {
+  width: 64%;
+  margin: auto;
+  padding: 18px;
+}
   #search {
   text-align: center;
   background-color: #f6f6f6;
@@ -327,18 +331,30 @@ a{
   object-fit: cover; 
    
 }
-.menu-lanoteenchantee{
-  
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 450px;
-    height: 220px;
+.menu-lanoteenchantee {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 450px;
+  height: 220px;
 }
+
+
 .restaurant-title {
     font-family: "Shrikhand", cursive;
     font-size: 1.6rem;
-    margin-left: 2%;
+    margin-left: 8%;
   }
+  .restaurant-name {
+    background: #f6f6f6;
+    padding-top: 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    top: -45px;
+    margin-left: 0;
+  }
+  
   
 .restaurant-name .heart {
     position: relative;
@@ -421,30 +437,6 @@ a{
   box-shadow: 3px 3px 10px #bfbfbf;
 }
 
-footer {
-  padding: 20px;
-  background-color: #353535;
-  margin-top: 50px;
-}
-footer h2 {
-  color: #ffffff;
-  font-family: "Shrikhand", cursive ;
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-}
-footer ul {
-  padding: 0;
-}
-footer ul li {
-  list-style-type: none;
-  margin-bottom: 10px;
-}
-footer ul li a {
-  color: #ffffff;  
-}
-footer ul li .fas {
-  margin-right: 10px;
-}
 
 
 

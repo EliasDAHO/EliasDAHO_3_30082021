@@ -1,0 +1,11 @@
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  & .logo-home {
+    width: 64%;
+    margin: auto;
+    padding: 18px;
+  }
+}
