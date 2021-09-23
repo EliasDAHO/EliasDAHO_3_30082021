@@ -333,13 +333,14 @@ a{
     object-fit: cover;
     width: 450px;
     height: 220px;
-  }
-  .restaurant-title {
+}
+.restaurant-title {
     font-family: "Shrikhand", cursive;
     font-size: 1.6rem;
-    
+    margin-left: 2%;
   }
-  .restaurant-name .heart {
+  
+.restaurant-name .heart {
     position: relative;
   }
   
