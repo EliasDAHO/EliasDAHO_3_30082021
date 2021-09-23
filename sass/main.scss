@@ -1,19 +1,6 @@
 @import "./utils/_variables";
-* {
-    margin: 0;
-    
-    
-  }
-   html {
-    width: 100%;
-    -webkit-overflow-x: hidden;
-    overflow-x: hidden;
-  }
+@import "./base/base";
   
-  body {
-    font-family: "roboto", sans-serif;
-     
-  }
   header {
     display: flex;
   }
@@ -397,6 +384,7 @@ a{
   left: 0%;
   border-bottom: 3px solid #99e2d0;
 }
+ 
 .choice-1,
 .choice-2,
 .choice-3,
@@ -413,6 +401,7 @@ a{
   display: flex;
   justify-content: space-between;
 }
+
 
 
 
