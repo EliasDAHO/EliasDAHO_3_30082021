@@ -93,7 +93,7 @@ header .logo-home {
 }
 
 .search-button:hover {
-  opacity: 0.55;
+  opacity: 0.65;
   transition: 0.3s;
   box-shadow: 3px 3px 10px #0d0d0d;
   transition: 0.3s;
@@ -509,7 +509,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   header .logo-home {
-    width: 40%;
+    width: 30%;
   }
 
   .searchfield {
