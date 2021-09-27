@@ -52,7 +52,7 @@ header .logo-home {
   box-shadow: 3px 3px 10px #bfbfbf;
 }
 .search-button:hover {
-  opacity: 0.55;
+  opacity: 0.65;
   transition: 0.3s;
   box-shadow: 3px 3px 10px #0d0d0d ;
   transition: 0.3s;
@@ -379,7 +379,7 @@ a{
 .restaurant-name .heart-full {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  background-image: linear-gradient( to top, #FF79DA, #9356DC);
   font-size: 1.6rem;
   display: block;
   position: absolute;
@@ -486,7 +486,7 @@ a{
   @media screen and (min-width: 1024px){
     
     header .logo-home {
-      width: 40%;
+      width: 30%;
     }
     .searchfield {
       width: 150px;
