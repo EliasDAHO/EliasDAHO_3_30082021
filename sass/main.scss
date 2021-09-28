@@ -536,7 +536,7 @@ a{
   padding: 16px 20px;
   color: #ffffff;
   font-weight: bold;
-  margin-left: 35%;
+  margin-left: 36%;
   margin-top: 10%;
   font-size: 1rem;
   
@@ -585,6 +585,9 @@ transition: 0.3s;
     width: 42%;
     height: 30vw;
     margin: 10px 15px;
+  }
+  #button-commander{
+    margin-left: 41%;
   }
   footer {
     text-align: center;
@@ -635,6 +638,9 @@ transition: 0.3s;
       -o-transition: 0.4s;
       transition: 0.4s;
     }
+    #button-commander{
+      margin-left: 43%;
+    }
     
     
     
@@ -666,6 +672,10 @@ transition: 0.3s;
     .restaurants .box-restaurant {
       height: 20vw;
       width: 47%;
+    }
+    #button-commander{
+      margin-left: 44.5%;
+      font-size: 1.2rem;
     }
     
 
