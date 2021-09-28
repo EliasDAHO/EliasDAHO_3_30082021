@@ -351,7 +351,7 @@ a {
   background: linear-gradient(to top, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
-  transform-origin: bottom;
+  transform-origin: padding;
   transform: scale(0);
 }
 
@@ -421,10 +421,8 @@ a {
   padding-top: 10px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding-bottom: 30px;
   position: relative;
-  top: -45px;
-  margin-left: 0;
+  top: -35px;
 }
 
 .restaurant-name .heart {
@@ -480,7 +478,7 @@ a {
 .choice-2,
 .choice-3,
 .choice-4 {
-  width: 97%;
+  width: 95%;
   height: 55px;
   cursor: pointer;
   background: #ffffff;
@@ -594,11 +592,12 @@ a {
   opacity: 1;
   border: none;
   border-radius: 25px;
-  padding: 16px 30px;
+  padding: 16px 20px;
   color: #ffffff;
   font-weight: bold;
+  margin-left: 35%;
+  margin-top: 10%;
   font-size: 1rem;
-  margin: 50px 150px 20px;
   background: linear-gradient(177deg, #ff79da 10%, #9256dc 90%);
   box-shadow: 3px 3px 10px #bfbfbf;
 }
