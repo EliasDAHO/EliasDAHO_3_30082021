@@ -78,9 +78,9 @@
   left: 5px;
   top: 5px;
   bottom: 5px;
-  border-radius: 120px;
-  width: 200px;
-  height: 200px;
+  border-radius: 220px;
+  width: 300px;
+  height: 300px;
   border: 8px solid transparent;
   border-top-color: #9356DC;
   border-bottom-color: #9356DC;
@@ -91,11 +91,11 @@
 .loading-spinner .loader:after {
   content: '';
   position: absolute;
-  right: 10px;
-  left: 10px;
-  top: 10px;
-  bottom: 10px;
-  border-radius: 100px;
+  right: 20px;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  border-radius: 200px;
   border: 8px solid transparent;
   border-right-color: #FF79DA;
   border-left-color: #FF79DA;
@@ -228,7 +228,7 @@
   box-shadow: 3px 3px 10px #bfbfbf;
   padding: 25px;
   border-radius: 25px;
-  margin: 12px;
+  margin: 25px;
   font-size: 0.95rem;
   position: relative;
   list-style-type:none ;
