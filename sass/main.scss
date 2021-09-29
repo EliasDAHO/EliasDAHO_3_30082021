@@ -586,6 +586,15 @@ transition: 0.3s;
     height: 30vw;
     margin: 10px 15px;
   }
+  #background-image {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 350px;
+  }
+  
+  
+  
+  
   #button-commander{
     margin-left: 41%;
   }
@@ -638,9 +647,32 @@ transition: 0.3s;
       -o-transition: 0.4s;
       transition: 0.4s;
     }
+    .menu-content h3,
+    .menu-content p {
+    font-size: 1.1rem;
+    }
+    .menu-detail{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: stretch;
+      align-content: stretch;
+      padding: 0;
+    }
+    .choice-1,
+    .choice-2,
+    .choice-3,
+    .choice-4{
+      width: 60%;
+      
+    }
+    
     #button-commander{
       margin-left: 43%;
     }
+    
+    
     
     
     
@@ -672,6 +704,22 @@ transition: 0.3s;
     .restaurants .box-restaurant {
       height: 20vw;
       width: 47%;
+    }
+    .menu-detail{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: stretch;
+      align-content: stretch;
+    }
+    
+    
+    .choice-1,
+    .choice-2,
+    .choice-3,
+    .choice-4{
+      width: 98%;
     }
     #button-commander{
       margin-left: 44.5%;
