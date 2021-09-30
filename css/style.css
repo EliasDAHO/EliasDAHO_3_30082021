@@ -198,8 +198,8 @@ header .logo-home {
   width: 300px;
   height: 300px;
   border: 8px solid transparent;
-  border-top-color: #9356DC;
-  border-bottom-color: #9356DC;
+  border-top-color: #9256dc;
+  border-bottom-color: #9256dc;
   -webkit-animation: spin 800ms linear infinite;
   animation: spin 800ms linear infinite;
 }
@@ -213,8 +213,8 @@ header .logo-home {
   bottom: 20px;
   border-radius: 50%;
   border: 8px solid transparent;
-  border-right-color: #FF79DA;
-  border-left-color: #FF79DA;
+  border-right-color: #ff79da;
+  border-left-color: #ff79da;
   -webkit-animation: spin-reverse 500ms linear infinite;
   animation: spin-reverse 500ms linear infinite;
 }
@@ -767,11 +767,17 @@ footer ul li .fas {
 .choice-3,
 .choice-4 {
     height: 70px;
+    width: 94%;
   }
 
   #button-commander {
     margin-left: 44.7%;
     font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  #button-commander {
+    margin-left: 47%;
   }
 }
 
