@@ -195,9 +195,9 @@ header .logo-home {
   top: 10px;
   bottom: 10px;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  border: 8px solid transparent;
+  width: 400px;
+  height: 400px;
+  border: 15px solid transparent;
   border-top-color: #9256dc;
   border-bottom-color: #9256dc;
   -webkit-animation: spin 800ms linear infinite;
@@ -207,12 +207,12 @@ header .logo-home {
 .loading-spinner .loader:after {
   content: "";
   position: absolute;
-  right: 20px;
-  left: 20px;
-  top: 20px;
-  bottom: 20px;
+  right: 10px;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
   border-radius: 50%;
-  border: 8px solid transparent;
+  border: 15px solid transparent;
   border-right-color: #ff79da;
   border-left-color: #ff79da;
   -webkit-animation: spin-reverse 500ms linear infinite;
