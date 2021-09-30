@@ -36,12 +36,15 @@
     background: linear-gradient(177deg, #ff79da 10%, #9256dc 90%);
     box-shadow: 3px 3px 10px #bfbfbf;
   }
+  
   .search-button:hover {
     opacity: 0.65;
     transition: 0.3s;
-    box-shadow: 3px 3px 10px #0d0d0d ;
+    box-shadow: 3px 3px 10px #0d0d0d;
     transition: 0.3s;
   }
+  
+  
   
   .loading-spinner {
     width: 100%;
@@ -75,8 +78,8 @@
     width: 300px;
     height: 300px;
     border: 8px solid transparent;
-    border-top-color: #9356DC;
-    border-bottom-color: #9356DC;
+    border-top-color: $color-primary;
+    border-bottom-color: $color-primary;
     -webkit-animation: spin 800ms linear infinite;
     animation: spin 800ms linear infinite;
   }
@@ -90,8 +93,8 @@
     bottom: 20px;
     border-radius: 50%;
     border: 8px solid transparent;
-    border-right-color: #FF79DA;
-    border-left-color: #FF79DA;
+    border-right-color: $color-secondary;
+    border-left-color: $color-secondary;
     -webkit-animation: spin-reverse 500ms linear infinite;
     animation: spin-reverse 500ms linear infinite;
   }
@@ -133,7 +136,7 @@
     counter-increment: liste-couleur;
     color: white;
     font-weight: bolder;
-    background-color: #9256dc;
+    background-color: $color-primary;
     border-radius: 100px;
     padding: 5px 9px;
     position: absolute;
@@ -145,7 +148,7 @@
     transition: 0.3s
   }
   #functionning ul :hover  {
-    color: #9256dc;
+    color: $color-primary;
   }
   #functionning .step {
     padding: 0 14px 0 8px;
@@ -420,8 +423,7 @@
     -webkit-animation: dishes 2s ease-in-out 0.8s forwards;
     animation: dishes 2s ease-in-out 0.8s forwards;
   }
-  
-  #button-commander{  
+  #button-commander {
     cursor: pointer;
     opacity: 1;
     border: none;
@@ -435,10 +437,11 @@
     background: linear-gradient(177deg, #ff79da 10%, #9256dc 90%);
     box-shadow: 3px 3px 10px #bfbfbf;
   }
-  #button-commander:hover{
-  opacity: 0.65;
-  transition: 0.3s;
-  box-shadow: 3px 3px 10px #0d0d0d ;
-  transition: 0.3s;
+  
+  #button-commander:hover {
+    opacity: 0.65;
+    transition: 0.3s;
+    box-shadow: 3px 3px 10px #0d0d0d;
+    transition: 0.3s;
   }
   
