@@ -1,3 +1,97 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes transition {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes transition {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@-webkit-keyframes checkslide {
+  0% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes checkslide {
+  0% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes dishes {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes dishes {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
 }
@@ -19,31 +113,6 @@ header .logo-home {
   width: 64vmin;
   margin: auto;
   padding: 18px;
-}
-
-footer {
-  padding: 20px;
-  background-color: #353535;
-  margin-top: 50px;
-}
-footer h2 {
-  color: #ffffff;
-  font-family: "Shrikhand", cursive;
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-}
-footer ul {
-  padding: 0;
-}
-footer ul li {
-  list-style-type: none;
-  margin-bottom: 10px;
-}
-footer ul li a {
-  color: #ffffff;
-}
-footer ul li .fas {
-  margin-right: 10px;
 }
 
 #search {
@@ -150,100 +219,6 @@ footer ul li .fas {
   animation: spin-reverse 500ms linear infinite;
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin-reverse {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-}
-@keyframes spin-reverse {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-}
-@-webkit-keyframes transition {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@keyframes transition {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@-webkit-keyframes checkslide {
-  0% {
-    transform: translateX(60px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes checkslide {
-  0% {
-    transform: translateX(60px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@-webkit-keyframes dishes {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes dishes {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 #functionning h2 {
   margin: 40px 20px 15px 30px;
 }
@@ -546,7 +521,7 @@ a {
 }
 
 .menu-content {
-  margin-left: 10px;
+  margin-left: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -557,9 +532,6 @@ a {
   font-size: 0.85rem;
   margin-bottom: 5px;
   margin-top: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .price {
@@ -595,7 +567,7 @@ a {
   padding: 16px 20px;
   color: #ffffff;
   font-weight: bold;
-  margin-left: 36%;
+  margin-left: 35%;
   margin-top: 10%;
   font-size: 1rem;
   background: linear-gradient(177deg, #ff79da 10%, #9256dc 90%);
@@ -607,6 +579,31 @@ a {
   transition: 0.3s;
   box-shadow: 3px 3px 10px #0d0d0d;
   transition: 0.3s;
+}
+
+footer {
+  padding: 20px;
+  background-color: #353535;
+  margin-top: 50px;
+}
+footer h2 {
+  color: #ffffff;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+footer ul li a {
+  color: #ffffff;
+}
+footer ul li .fas {
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 577px) {
@@ -669,10 +666,6 @@ a {
     font-size: 1rem;
   }
 
-  footer {
-    font-size: 1.2rem;
-  }
-
   #functionning ul {
     flex-direction: row;
     align-items: center;
@@ -697,19 +690,6 @@ a {
     transition: 0.4s;
   }
 
-  .restaurant-title {
-    margin-left: 2%;
-  }
-
-  .menu-content h3,
-.menu-content p {
-    font-size: 0.88rem;
-  }
-
-  .price {
-    font-size: 0.88rem;
-  }
-
   .menu-detail {
     display: flex;
     flex-direction: row;
@@ -722,6 +702,10 @@ a {
   #button-commander {
     margin-left: 44%;
     margin-top: 3%;
+  }
+
+  footer {
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -757,42 +741,17 @@ a {
     width: 47%;
   }
 
-  .menu-detail {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-  }
-
-  .choice-1,
-.choice-2,
-.choice-3,
-.choice-4 {
-    width: 96%;
-  }
-
-  .restaurant-title {
-    font-size: 1.8rem;
-    margin-left: 2%;
-  }
-
-  .menu-title {
-    font-size: 1.4rem;
-  }
-
   .menu-content h3,
 .menu-content p {
-    font-size: 1.2rem;
+    font-size: 1em;
   }
 
   .price {
-    font-size: 1.2rem;
+    font-size: 1em;
   }
 
   #button-commander {
-    margin-left: 44.5%;
+    margin-left: 44.7%;
     font-size: 1.1rem;
     margin-top: 3%;
   }
