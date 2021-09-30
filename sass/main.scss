@@ -4,7 +4,7 @@
 @import "./layout/header\ ";
 @import "./layout/body";
 @import "./layout/footer\ "; 
-  
+ 
 
   
 @media screen  and (min-width: 577px){
@@ -59,7 +59,7 @@
  
  
 }
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1156px){
     
     header .logo-home {
       width: 30%;
@@ -94,18 +94,9 @@
       -o-transition: 0.4s;
       transition: 0.4s;
     }
-    #button-commander{
-      margin-left: 44%;
-      margin-top: 3%;
+    .restaurant-title {
+      font-size: 1.8em;
     }
-    footer{
-      font-size: 1.2rem;
-    }
-    
-    }
-
-
-  @media screen and (min-width: 1156px) {
     .menu-detail {
       display: flex;
       flex-direction: row;
@@ -113,8 +104,22 @@
       justify-content: center;
       align-items: stretch;
       align-content: stretch;
+      margin-left: 1%;
     }
-  }  
+    
+    
+    #button-commander{
+      margin-left: 44%;
+      margin-top: 3%;
+    }
+    footer{
+      font-size: 1.1rem;
+    }
+    
+    }
+
+
+  
   @media screen and (min-width: 1440px) {
     #search form .searchfield {
       width: 17vw;
@@ -142,15 +147,27 @@
       height: 20vw;
       width: 47%;
     }
-    
+    .menu-content h3,
+    .menu-content p {
+     font-size: 1.1em;
+    }
+    .price {
+     font-size: 1.1em;
+    }
+    .choice-1,
+    .choice-2,
+    .choice-3,
+    .choice-4{
+      height: 70px;
+    }
     
     #button-commander{
       margin-left: 44.7%;
       font-size: 1.1rem;
-      margin-top: 3%;
+    }
     }
     
-  }
+    
     
   
     
