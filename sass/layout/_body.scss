@@ -118,18 +118,18 @@
      }
     
    
-  #functionning ul li {
-    width: 76%;
-    background-color: #f6f6f6;
-    box-shadow: 3px 3px 10px #bfbfbf;
-    padding: 25px;
-    border-radius: 25px;
-    margin: 25px;
-    font-size: 0.95rem;
-    position: relative;
-    list-style-type:none ;
-    
-  }
+     #functionning ul li {
+      width: 90%;
+      background-color: #f6f6f6;
+      box-shadow: 3px 3px 10px #bfbfbf;
+      padding: 25px;
+      border-radius: 25px;
+      margin: 25px;
+      font-size: 0.95rem;
+      position: relative;
+      list-style-type: none;
+      margin-left: 5px;
+    }
   
   #functionning ul li::before {
     content: counter(liste-couleur);
@@ -392,7 +392,7 @@
   }
   .menu-content h3,
   .menu-content p {
-    font-size: 0.85rem;
+    font-size: 0.85em;
   margin-bottom: 5px;
   margin-top: 5px;
   white-space: nowrap;
