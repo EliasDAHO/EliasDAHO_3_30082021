@@ -156,13 +156,13 @@ header .logo-home {
   font-size: 0.8rem;
   margin: 20px 10px 40px 10px;
   background: linear-gradient(177deg, #ff79da 10%, #9256dc 90%);
-  box-shadow: 3px 3px 10px #bfbfbf;
+  box-shadow: 3px 3px 10px black;
 }
 
 .search-button:hover {
   opacity: 0.65;
   transition: 0.3s;
-  box-shadow: 3px 3px 10px #0d0d0d;
+  box-shadow: 3px 3px 10px;
   transition: 0.3s;
 }
 
@@ -310,14 +310,14 @@ a {
 }
 
 .heart-empty:hover {
-  animation: vide 1s forwards linear;
+  animation: vide 0.3s forwards linear;
   cursor: pointer;
 }
 
 .heart-empty:hover + i {
   opacity: 1;
   transform: scale(1);
-  transition: transform 1s linear;
+  transition: transform 0.3s linear;
 }
 
 .heart-full {
@@ -333,7 +333,7 @@ a {
 .restaurants .box-restaurant {
   position: relative;
   width: 90%;
-  height: 60vw;
+  height: 62vw;
   margin: auto;
   margin-top: 25px;
   border-radius: 15px;
@@ -351,7 +351,6 @@ a {
 }
 
 .new {
-  color: #2c9c81;
   background-color: #99e2d0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -361,7 +360,6 @@ a {
   right: 1em;
   padding: 6.5px 9.5px;
   font-size: 15px;
-  font-weight: bold;
   border-radius: 2px;
 }
 
