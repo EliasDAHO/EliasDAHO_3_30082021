@@ -38,54 +38,12 @@
   }
   
   .search-button:hover {
-    opacity: 0.75;
+    opacity: 0.85;
     transition: 0.3s;
     box-shadow: 3px 3px 10px #0d0d0d ;
     transition: 0.3s;
   }
-  .loading-spinner {
-    width: 100%;
-    height: 60vh;
-    background: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    z-index: 9999;
-    
-    -webkit-animation: transition 3s ease both;
-    animation: transition 3s ease both;
-  }
   
-  .loading-spinner .loader {
-    border: 5px solid transparent;
-    display: inline-block;
-    position: relative;
-    right: 5px;
-    left: 5px;
-    top: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    border: 10px solid transparent;
-    border-top-color: #9356DC;
-    border-bottom-color: #9356DC;
-    -webkit-animation: spin 800ms linear infinite;
-    animation: spin 800ms linear infinite;
-  }
-  
-  .loading-spinner .loader:after {
-    content: "";
-    position: absolute;
-    right: 5px;
-    left: 5px;
-    top: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 10px solid transparent;
-    border-right-color: #FF79DA;
-    border-left-color: #FF79DA;
-    -webkit-animation: spin-reverse 400ms linear infinite;
-    animation: spin-reverse 400ms linear infinite;
-  }
   
   
   #functionning h2 {
@@ -219,10 +177,9 @@
     width: fit-content;
     position: absolute;
     top: 0.5em;
-   right: 1em;
+    right: 1em;
     padding: 6.5px 9.5px;
     font-size: 15px;
-    
     border-radius: 2px;
   }
   
@@ -421,9 +378,10 @@
   }
   
   #button-commander:hover {
-    opacity: 0.65;
+    opacity: 0.9;
     transition: 0.3s;
-    box-shadow: 3px 3px 10px #0d0d0d;
+    box-shadow: 3px 3px 10px #0d0d0d ;
     transition: 0.3s;
+    
   }
   
