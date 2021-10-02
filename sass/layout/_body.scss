@@ -34,13 +34,13 @@
     font-size: 0.8rem;
     margin: 20px 10px 40px 10px;
     background: linear-gradient(177deg, #ff79da 10%, #9256dc 90%);
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 10px #bfbfbf;
   }
   
   .search-button:hover {
-    opacity: 0.65;
+    opacity: 0.75;
     transition: 0.3s;
-    box-shadow: 3px 3px 10px  ;
+    box-shadow: 3px 3px 10px #0d0d0d ;
     transition: 0.3s;
   }
   .loading-spinner {
@@ -337,8 +337,8 @@
   .choice-2:hover .price-check,
   .choice-3:hover .price-check,
   .choice-4:hover .price-check {
-    -webkit-animation: checkslide 0.35s ease-in-out forwards;
-    animation: checkslide 0.35s ease-in-out forwards;
+    -webkit-animation: checkslide 0.45s ease-in-out forwards;
+    animation: checkslide 0.45s ease-in-out forwards;
   }
   .choice-1 .checkicon,
   .choice-2 .checkicon,
@@ -354,7 +354,7 @@
   .choice-3:hover .checkicon,
   .choice-4:hover .checkicon {
     transform: rotate(2turn);
-    transition: 0.7s;
+    transition: 0.8s;
   }
   .choice-1 .checkbox,
   .choice-2 .checkbox,
@@ -370,8 +370,8 @@
   .choice-2:hover .checkbox,
   .choice-3:hover .checkbox,
   .choice-4:hover .checkbox {
-    -webkit-animation: checkslide 0.35s ease-in-out forwards;
-    animation: checkslide 0.35s ease-in-out forwards;
+    -webkit-animation: checkslide 0.45s ease-in-out forwards;
+    animation: checkslide 0.45s ease-in-out forwards;
   }
   .menu-content {
     margin-left: 5px;
@@ -404,17 +404,7 @@
     animation: dishes 2s ease-in-out forwards;
   }
   
-  .dish {
-    transform: scale(0);
-    -webkit-animation: dishes 2s ease-in-out 0.4s forwards;
-    animation: dishes 2s ease-in-out 0.4s forwards;
-  }
   
-  .dessert {
-    transform: scale(0);
-    -webkit-animation: dishes 2s ease-in-out 0.8s forwards;
-    animation: dishes 2s ease-in-out 0.8s forwards;
-  }
   #button-commander {
     cursor: pointer;
     opacity: 1;
