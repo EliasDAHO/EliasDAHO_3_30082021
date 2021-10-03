@@ -145,11 +145,12 @@ header .logo-home {
   font-size: 1.2em;
   font-weight: normal;
   text-transform: initial;
+  font-family: "roboto", sans-serif;
 }
 
 .search-button {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 1;
   border: none;
   border-radius: 25px;
   padding: 16px 20px;
@@ -162,9 +163,9 @@ header .logo-home {
 }
 
 .search-button:hover {
-  opacity: 0.85;
+  opacity: 0.95;
   transition: 0.3s;
-  box-shadow: 3px 3px 10px #0d0d0d;
+  box-shadow: 3px 3px 10px black;
   transition: 0.3s;
 }
 
@@ -260,14 +261,14 @@ a {
 }
 
 .heart-empty:hover {
-  animation: vide 0.3s forwards linear;
+  animation: vide 0.2s forwards linear;
   cursor: pointer;
 }
 
 .heart-empty:hover + i {
   opacity: 1;
   transform: scale(1);
-  transition: transform 0.3s linear;
+  transition: transform 0.2s linear;
 }
 
 .heart-full {
@@ -518,9 +519,9 @@ a {
 }
 
 #button-commander:hover {
-  opacity: 0.9;
+  opacity: 0.95;
   transition: 0.3s;
-  box-shadow: 3px 3px 10px #0d0d0d;
+  box-shadow: 3px 3px 10px black;
   transition: 0.3s;
 }
 
