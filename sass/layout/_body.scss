@@ -36,7 +36,9 @@
     font-size: 1.2em;
     font-weight: normal;
     text-transform: initial;
-    font-family: "roboto", sans-serif;
+    font-family: "roboto",sans-serif;
+    color:grey;
+
   }
   .search-button {
     cursor: pointer;
@@ -103,11 +105,11 @@
     left: -3%;
     top: 29%;
   }
-  #functionning ul li:hover  {
+  #functionning ul li :hover  {
     background-color:#f5edff ;
     transition: 0.3s
   }
-  #functionning ul  :hover  {
+  #functionning ul :hover  {
     color: $color-primary;
   }
   #functionning .step {
@@ -197,12 +199,7 @@
     border-radius: 2px;
   }
   
-  .arrow{
-    font-size: 1.5rem;
-    margin-top: 30px;
-    margin-left: 20px;
-    color: #0d0d0d;
-  }
+  
   #background-image{
     width: 100%; 
     -o-object-fit: cover;
