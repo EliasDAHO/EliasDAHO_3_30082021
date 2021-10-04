@@ -111,10 +111,14 @@ header {
   display: flex;
 }
 header .logo-home {
-  width: 64vmin;
-  font-size: 1.6rem;
+  height: 55px;
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
   margin: auto;
-  padding: 18px;
   font-family: "Shrikhand", cursive;
 }
 
@@ -163,7 +167,7 @@ header .logo-home {
 }
 
 .search-button:hover {
-  opacity: 0.95;
+  opacity: 0.92;
   transition: 0.3s;
   box-shadow: 3px 3px 10px black;
   transition: 0.3s;
@@ -303,8 +307,7 @@ a {
 
 .new {
   background-color: #99e2d0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
+  color: green;
   width: fit-content;
   position: absolute;
   top: 0.5em;
@@ -394,7 +397,7 @@ a {
   content: "";
   position: absolute;
   width: 45px;
-  height: 25px;
+  height: 20px;
   left: 0%;
   border-bottom: 3px solid #99e2d0;
 }
@@ -410,10 +413,10 @@ a {
   margin: 10px 12px;
   padding: 5px 0;
   border-radius: 15px;
-  overflow: hidden;
+  justify-content: space-between;
   box-shadow: 3px 3px 10px #bfbfbf;
   display: flex;
-  justify-content: space-between;
+  overflow: hidden;
 }
 
 .choice-1 .price-check,
@@ -456,7 +459,7 @@ a {
 .choice-3 .checkbox,
 .choice-4 .checkbox {
   align-self: center;
-  padding: 25px;
+  padding: 20px;
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
