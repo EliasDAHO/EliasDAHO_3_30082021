@@ -40,7 +40,7 @@
   }
   
   .search-button:hover {
-    opacity: 0.95;
+    opacity: 0.92;
     transition: 0.3s;
     box-shadow: 3px 3px 10px black ;
     transition: 0.3s;
@@ -174,8 +174,7 @@
   .new {
     
     background-color: #99e2d0;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
+    color: green;
     width: fit-content;
     position: absolute;
     top: 0.5em;
@@ -263,7 +262,7 @@
     content: "";
     position: absolute;
     width: 45px;
-    height: 25px;
+    height: 20px;
     left: 0%;
     border-bottom: 3px solid #99e2d0;
   }
@@ -279,10 +278,11 @@
     margin: 10px 12px;
     padding: 5px 0;
     border-radius: 15px;
-    overflow: hidden;
+    justify-content: space-between;
     box-shadow: 3px 3px 10px #bfbfbf;
     display: flex;
-    justify-content: space-between;
+    overflow: hidden;
+    
   }
   .choice-1 .price-check,
   .choice-2 .price-check,
@@ -320,7 +320,7 @@
   .choice-3 .checkbox,
   .choice-4 .checkbox {
     align-self: center;
-    padding: 25px;
+    padding: 20px;
     background-color: #99e2d0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
