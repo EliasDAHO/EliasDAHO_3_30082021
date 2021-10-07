@@ -35,6 +35,7 @@
     .restaurant-title{
       margin-left: 3%;
     }
+    
     #button-commander{
       margin-left: 37%;
     }
@@ -42,12 +43,7 @@
       text-align: center;
     }
     
-    .menu-detail {
-      display: flex;
-    }
-    .menu-detail .menu {
-      width: 33%;
-    }
+    
   }
   
   
@@ -95,7 +91,22 @@
       .restaurant-title {
         font-size: 1.8em;
       }
-      
+      .menu-detail {
+        display: flex;
+      }
+     
+      .menu-detail .menu {
+        width: 33%;
+      }
+      .menu .choice-1,
+      .menu .choice-2,
+      .menu .choice-3,
+      .menu .choice-4 {
+        width: 94%;
+        
+      }
+     
+     
       #button-commander{
         margin-left: 41%;
         margin-top: 3%;
