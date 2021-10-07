@@ -88,7 +88,7 @@
   }
   
   .search-button:hover {
-    opacity: 0.85;
+    opacity: 0.90;
     transition: 0.3s;
     box-shadow: 3px 3px 10px #0d0d0d ;
     transition: 0.3s;
@@ -186,13 +186,13 @@
     font-size: 1.6em;
   }
   .heart-empty:hover {
-    animation: vide 0.10s forwards linear;
+    animation: vide 0.20s forwards linear;
     cursor: pointer;
   }
   .heart-empty:hover + i {
     opacity: 1;
     transform: scale(1);
-    transition: transform 0.10s linear;
+    transition: transform 0.20s linear;
   }
   .heart-full {
     position: absolute;
