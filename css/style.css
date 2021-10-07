@@ -170,7 +170,7 @@ header .arrow {
 }
 
 .search-button:hover {
-  opacity: 0.8;
+  opacity: 0.85;
   transition: 0.3s;
   box-shadow: 3px 3px 10px #0d0d0d;
   transition: 0.3s;
@@ -525,7 +525,7 @@ a {
 }
 
 #button-commander:hover {
-  opacity: 0.75;
+  opacity: 0.85;
   transition: 0.3s;
   box-shadow: 3px 3px 10px #0d0d0d;
   transition: 0.3s;
@@ -602,14 +602,6 @@ footer ul li .fas {
   footer {
     text-align: center;
   }
-
-  .menu-detail {
-    display: flex;
-  }
-
-  .menu-detail .menu {
-    width: 33%;
-  }
 }
 @media screen and (min-width: 1024px) {
   header .logo-home {
@@ -654,6 +646,21 @@ footer ul li .fas {
 
   .restaurant-title {
     font-size: 1.8em;
+  }
+
+  .menu-detail {
+    display: flex;
+  }
+
+  .menu-detail .menu {
+    width: 33%;
+  }
+
+  .menu .choice-1,
+.menu .choice-2,
+.menu .choice-3,
+.menu .choice-4 {
+    width: 94%;
   }
 
   #button-commander {
