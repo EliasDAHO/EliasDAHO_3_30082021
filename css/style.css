@@ -6,14 +6,6 @@
     visibility: hidden;
   }
 }
-@-webkit-keyframes loader {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
 @keyframes loader_roll {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -43,17 +35,9 @@
     transform: translateY(0px);
   }
 }
-@-webkit-keyframes checkslide {
-  0% {
-    transform: translateX(70px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 @keyframes checkslide {
   0% {
-    transform: translateX(70px);
+    transform: translateX(60px);
   }
   100% {
     transform: translateX(0);
@@ -117,12 +101,12 @@ header .arrow {
 
 .loading-spinner::before {
   content: "";
-  height: 350px;
-  width: 350px;
-  border-top: 16px solid #9356DC;
-  border-right: 16px solid #FF79DA;
-  border-bottom: 16px solid #99E2D0;
-  border-left: 16px solid #bfbfbf;
+  height: 330px;
+  width: 330px;
+  border-top: 15px solid #9256dc;
+  border-right: 15px solid #ff79da;
+  border-bottom: 15px solid #99e2d0;
+  border-left: 15px solid #bfbfbf;
   border-radius: 100%;
   -webkit-animation: loader_roll 4s linear;
   animation: loader_roll 4s linear;
@@ -168,8 +152,7 @@ header .arrow {
   font-size: 1.2em;
   font-weight: normal;
   text-transform: initial;
-  font-family: "roboto", 100;
-  color: grey;
+  font-family: "roboto-light", 100;
 }
 
 .search-button {
@@ -182,12 +165,12 @@ header .arrow {
   font-weight: bold;
   font-size: 0.8rem;
   margin: 20px 10px 40px 10px;
-  background: linear-gradient(177deg, #ff79da 10%, #9256dc 90%);
+  background: linear-gradient(180deg, #ff79da 10%, #9256dc 90%);
   box-shadow: 3px 3px 10px #bfbfbf;
 }
 
 .search-button:hover {
-  opacity: 0.75;
+  opacity: 0.8;
   transition: 0.3s;
   box-shadow: 3px 3px 10px #0d0d0d;
   transition: 0.3s;
@@ -285,14 +268,14 @@ a {
 }
 
 .heart-empty:hover {
-  animation: vide 0.25s forwards linear;
+  animation: vide 0.1s forwards linear;
   cursor: pointer;
 }
 
 .heart-empty:hover + i {
   opacity: 1;
   transform: scale(1);
-  transition: transform 0.25s linear;
+  transition: transform 0.1s linear;
 }
 
 .heart-full {
@@ -388,7 +371,7 @@ a {
 .restaurant-name .heart-full {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  background-image: linear-gradient(177deg, #FF79DA, #9356DC);
   font-size: 1.6rem;
   display: block;
   position: absolute;
@@ -403,13 +386,13 @@ a {
   font-weight: normal;
   margin: 30px 20px;
   position: relative;
-  font-family: "roboto", sans-serif 100;
+  font-family: "roboto", sans-serif, 100;
 }
 
 .menu-title::before {
   content: "";
   position: absolute;
-  width: 45px;
+  width: 41px;
   height: 20px;
   left: 0%;
   border-bottom: 3px solid #99e2d0;
@@ -426,7 +409,7 @@ a {
 .menu .choice-3,
 .menu .choice-4 {
   width: 92%;
-  height: 55px;
+  height: 60px;
   cursor: pointer;
   background: #ffffff;
   margin: 10px 12px;
@@ -436,7 +419,13 @@ a {
   box-shadow: 3px 3px 10px #bfbfbf;
   display: flex;
   justify-content: space-between;
-  animation: transition 1000ms both;
+}
+
+.choice-1,
+.choice-2,
+.choice-3,
+.choice-4 {
+  animation: transition 1500ms both;
 }
 
 .menu .choice-1 .price-check,
@@ -452,8 +441,8 @@ a {
 .menu .choice-2:hover .price-check,
 .menu .choice-3:hover .price-check,
 .menu .choice-4:hover .price-check {
-  -webkit-animation: checkslide 0.35s ease-in-out forwards;
-  animation: checkslide 0.35s ease-in-out forwards;
+  -webkit-animation: checkslide 0.45s ease-in-out forwards;
+  animation: checkslide 0.45s ease-in-out forwards;
 }
 
 .menu .choice-1 .checkicon,
@@ -479,18 +468,19 @@ a {
 .menu .choice-3 .checkbox,
 .menu .choice-4 .checkbox {
   align-self: center;
-  padding: 17px;
+  padding: 25px;
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  width: 10px;
 }
 
 .menu .choice-1:hover .checkbox,
 .menu .choice-2:hover .checkbox,
 .menu .choice-3:hover .checkbox,
 .menu .choice-4:hover .checkbox {
-  -webkit-animation: checkslide 0.35s ease-in-out forwards;
-  animation: checkslide 0.35s ease-in-out forwards;
+  -webkit-animation: checkslide 0.45s ease-in-out forwards;
+  animation: checkslide 0.45s ease-in-out forwards;
 }
 
 .menu .menu-content {
@@ -502,19 +492,20 @@ a {
 
 .menu .menu-content h3,
 .menu .menu-content p {
-  font-size: 0.9rem;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: "roboto", sans-serif;
 }
 
 .menu .price {
   font-size: 0.85rem;
   font-weight: bold;
   align-self: flex-end;
-  margin: 8px 20px;
+  margin: 10px 20px;
 }
 
 #button-commander {
@@ -526,15 +517,15 @@ a {
   padding: 16px 50px;
   color: #ffffff;
   font-weight: bold;
-  margin-left: 23%;
+  margin-left: 27%;
   margin-top: 10%;
   font-size: 1rem;
-  background: linear-gradient(177deg, #ff79da 10%, #9256dc 90%);
+  background: linear-gradient(180deg, #ff79da 10%, #9256dc 90%);
   box-shadow: 3px 3px 10px #bfbfbf;
 }
 
 #button-commander:hover {
-  opacity: 0.9;
+  opacity: 0.75;
   transition: 0.3s;
   box-shadow: 3px 3px 10px #0d0d0d;
   transition: 0.3s;
@@ -633,8 +624,8 @@ footer ul li .fas {
     font-size: 1rem;
   }
 
-  form input {
-    font-size: 1rem;
+  #search .location p {
+    font-size: 1.2em;
   }
 
   #functionning ul {
@@ -718,7 +709,7 @@ footer ul li .fas {
 
   .menu .menu-content h3,
 .menu .menu-content p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .menu .price {
