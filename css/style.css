@@ -170,7 +170,7 @@ header .arrow {
 }
 
 .search-button:hover {
-  opacity: 0.85;
+  opacity: 0.9;
   transition: 0.3s;
   box-shadow: 3px 3px 10px #0d0d0d;
   transition: 0.3s;
@@ -268,14 +268,14 @@ a {
 }
 
 .heart-empty:hover {
-  animation: vide 0.1s forwards linear;
+  animation: vide 0.2s forwards linear;
   cursor: pointer;
 }
 
 .heart-empty:hover + i {
   opacity: 1;
   transform: scale(1);
-  transition: transform 0.1s linear;
+  transition: transform 0.2s linear;
 }
 
 .heart-full {
@@ -724,7 +724,7 @@ footer ul li .fas {
   }
 
   #button-commander {
-    margin-left: 43%;
+    margin-left: 42.5%;
     font-size: 1.2em;
   }
 }
