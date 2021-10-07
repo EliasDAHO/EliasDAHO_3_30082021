@@ -1,69 +1,59 @@
-@-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
+
+@keyframes loader {
+  0% {
+    visibility: visible;
   }
-  
-  @keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
+  100% {
+    visibility: hidden;
   }
-  
-  @-webkit-keyframes spin-reverse {
-    0% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(-360deg);
-              transform: rotate(-360deg);
-    }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    visibility: visible;
   }
-  
-  @keyframes spin-reverse {
-    0% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(-360deg);
-              transform: rotate(-360deg);
-    }
+  100% {
+    visibility: hidden;
   }
-  
-  @-webkit-keyframes transition {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      z-index: -1;
-    }
+}
+
+@keyframes loader_roll {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    opacity: 1;
   }
-  
-  @keyframes transition {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      z-index: -1;
-    }
+  100% {
+    opacity: 0;
   }
+}
+@keyframes loader_roll {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes transition {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
     @-webkit-keyframes checkslide {
       0% {
-        transform: translateX(60px);
+        transform: translateX(70px);
       }
       100% {
         transform: translateX(0);
@@ -71,30 +61,13 @@
     }
     @keyframes checkslide {
       0% {
-        transform: translateX(60px);
+        transform: translateX(70px);
       }
       100% {
         transform: translateX(0);
       }
     }
-    @-webkit-keyframes dishes {
-      from {
-        transform: scale(0);
-        opacity: 0;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-    @keyframes dishes {
-      from {
-        transform: scale(0);
-        opacity: 0;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-  }
+    
+    
   
+   
