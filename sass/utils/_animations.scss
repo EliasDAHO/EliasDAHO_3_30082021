@@ -8,14 +8,7 @@
   }
 }
 
-@-webkit-keyframes loader {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
+
 
 @keyframes loader_roll {
   0% {
@@ -47,21 +40,10 @@
     transform: translateY(0px);
   }
 }
-
-
-
-
-    @-webkit-keyframes checkslide {
+  
+@keyframes checkslide {
       0% {
-        transform: translateX(70px);
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-    @keyframes checkslide {
-      0% {
-        transform: translateX(70px);
+        transform: translateX(60px);
       }
       100% {
         transform: translateX(0);

@@ -7,11 +7,11 @@ $backgroundcolor-dark: darken($backgroundcolor-main, 4.71);
 $backgroundcolor-darker: darken($backgroundcolor-main, 13.73);
 $backgroundcolor-footer: darken($backgroundcolor-main, 75.69);
 $background-gradient: linear-gradient( 
-  177deg
+  180deg
   $color-secondary 10%,
   $color-primary 90%
 );
 
 $color-shadow: #bfbfbf;
-$color-shadow--dark: darken#0d0d0d;
+$color-shadow--dark: #0d0d0d;
 $color-light: #ffffff;
