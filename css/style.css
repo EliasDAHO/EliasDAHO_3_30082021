@@ -98,8 +98,9 @@ header .arrow {
   text-align: center;
   display: flex;
   margin-top: -5rem;
-  -webkit-animation: loader 4s forwards;
-  animation: loader 4s forwards;
+  animation-delay: 3s;
+  -webkit-animation: loader 3s forwards;
+  animation: loader 3s forwards;
 }
 
 .loading-spinner::before {
@@ -114,8 +115,8 @@ header .arrow {
   border-bottom: 15px solid #99e2d0;
   border-left: 15px solid #bfbfbf;
   border-radius: 100%;
-  -webkit-animation: loader_roll 4s linear;
-  animation: loader_roll 4s linear;
+  -webkit-animation: loader_roll 3s linear infinite;
+  animation: loader_roll 3s linear infinite;
 }
 
 #search {
@@ -482,11 +483,28 @@ a {
   animation: checkslide 0.45s ease-in-out forwards;
 }
 
-.choice-1,
-.choice-2,
-.choice-3,
+.choice-1 {
+  transform: scale(0);
+  -webkit-animation: transition 0.2s 0.2s forwards;
+  animation: transition 0.2s both 0.2s forwards;
+}
+
+.choice-2 {
+  transform: scale(0);
+  -webkit-animation: transition 0.4s 0.4s forwards;
+  animation: transition 0.4s both 0.4s forwards;
+}
+
+.choice-3 {
+  transform: scale(0);
+  -webkit-animation: transition 0.6s 0.6s forwards;
+  animation: transition 0.6s both 0.6s forwards;
+}
+
 .choice-4 {
-  animation: transition 1000ms both;
+  transform: scale(0);
+  -webkit-animation: transition 0.8s 0.8s forwards;
+  animation: transition 0.8s both 0.8s forwards;
 }
 
 .menu .menu-content {
@@ -730,7 +748,7 @@ footer ul li .fas {
   }
 
   #button-commander {
-    margin-left: 43%;
+    margin-left: 42.5%;
     font-size: 1.2em;
   }
 }
