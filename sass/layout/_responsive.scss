@@ -56,7 +56,7 @@
     @media screen and (min-width: 1024px){
     
       header .logo-home {
-        width: 30%;
+        font-size: 4rem;
       }
       .searchfield {
         width: 150px;
@@ -121,6 +121,8 @@
     }
       
     @media screen and (min-width: 1440px) {
+     
+     
       #search form .searchfield {
         width: 17vw;
         padding: 2vw 2vw;
