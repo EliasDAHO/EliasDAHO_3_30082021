@@ -6,6 +6,14 @@
     visibility: hidden;
   }
 }
+@keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
 @keyframes loader_roll {
   0% {
     -webkit-transform: rotate(-360deg);
@@ -76,33 +84,31 @@ header .logo-home {
 header .arrow {
   font-size: 1.4rem;
   margin-top: 45px;
-  margin-left: 1%;
+  margin-left: 35%;
   color: #0d0d0d;
 }
 
 .loading-spinner {
   position: fixed;
-  background: rgba(255, 255, 255, 0.95);
+  background-color: #f6f6f6;
   height: 100%;
   width: 100%;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  z-index: 1;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-top: -5rem;
   -webkit-animation: loader 4s forwards;
   animation: loader 4s forwards;
 }
 
 .loading-spinner::before {
   content: "";
-  height: 330px;
-  width: 330px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  width: 300px;
   border-top: 15px solid #9256dc;
   border-right: 15px solid #ff79da;
   border-bottom: 15px solid #99e2d0;
@@ -268,14 +274,14 @@ a {
 }
 
 .heart-empty:hover {
-  animation: vide 0.2s forwards linear;
+  animation: vide 0.3s forwards linear;
   cursor: pointer;
 }
 
 .heart-empty:hover + i {
   opacity: 1;
   transform: scale(1);
-  transition: transform 0.2s linear;
+  transition: transform 0.3s linear;
 }
 
 .heart-full {
@@ -421,13 +427,6 @@ a {
   justify-content: space-between;
 }
 
-.choice-1,
-.choice-2,
-.choice-3,
-.choice-4 {
-  animation: transition 1500ms both;
-}
-
 .menu .choice-1 .price-check,
 .menu .choice-2 .price-check,
 .menu .choice-3 .price-check,
@@ -481,6 +480,13 @@ a {
 .menu .choice-4:hover .checkbox {
   -webkit-animation: checkslide 0.45s ease-in-out forwards;
   animation: checkslide 0.45s ease-in-out forwards;
+}
+
+.choice-1,
+.choice-2,
+.choice-3,
+.choice-4 {
+  animation: transition 1000ms both;
 }
 
 .menu .menu-content {
@@ -664,7 +670,7 @@ footer ul li .fas {
   }
 
   #button-commander {
-    margin-left: 40%;
+    margin-left: 41%;
     margin-top: 3%;
   }
 
@@ -724,7 +730,7 @@ footer ul li .fas {
   }
 
   #button-commander {
-    margin-left: 42.5%;
+    margin-left: 43%;
     font-size: 1.2em;
   }
 }
