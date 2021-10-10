@@ -2,7 +2,7 @@ footer {
   padding: 20px;
   background-color: $backgroundcolor-footer;
   margin-top: 50px;
-  & h2 {
+  & h4 {
     color: $color-light;
     font-family: "Shrikhand", cursive;
     font-size: 1.3rem;
@@ -21,4 +21,5 @@ footer {
       }
     }
   }
-}
+  
+  }

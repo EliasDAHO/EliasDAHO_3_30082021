@@ -69,7 +69,7 @@
     font-size: 1.2em;
     font-weight:normal ;
     text-transform: initial;
-    font-family: "roboto-light",100 ;
+    font-family: "roboto",100 ;
     
 
   }
@@ -110,10 +110,7 @@
       flex-direction: column;
       align-items: center;
       opacity: 1;
-      
-     }
-    
-   
+    }
      #functionning ul li {
       width: 90%;
       background-color: $backgroundcolor-main;
