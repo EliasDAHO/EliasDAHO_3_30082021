@@ -431,25 +431,25 @@ a {
 .choice-1 {
   transform: scale(0);
   -webkit-animation: transition 0.2s ease-in 0.2s forwards;
-  animation: transition 0.2s both 0.2s forwards;
+  animation: transition 0.2s ease-in 0.2s both;
 }
 
 .choice-2 {
   transform: scale(0);
   -webkit-animation: transition 0.4s ease-in 0.4s forwards;
-  animation: transition 0.4s both 0.4s forwards;
+  animation: transition 0.4s ease-in 0.4s both;
 }
 
 .choice-3 {
   transform: scale(0);
   -webkit-animation: transition 0.6s ease-in 0.6s forwards;
-  animation: transition 0.6s both 0.6s forwards;
+  animation: transition 0.6s ease-in 0.6s both;
 }
 
 .choice-4 {
   transform: scale(0);
   -webkit-animation: transition 0.8s ease-in 0.8s forwards;
-  animation: transition 0.8s both 0.8s forwards;
+  animation: transition 0.8s ease-in 0.8s both;
 }
 
 .menu .choice-1 .price-check,
