@@ -110,13 +110,14 @@ header .arrow {
   text-align: center;
   height: 300px;
   width: 300px;
+  margin-top: 3rem;
   border-top: 15px solid #9256dc;
   border-right: 15px solid #ff79da;
   border-bottom: 15px solid #99e2d0;
   border-left: 15px solid #bfbfbf;
   border-radius: 100%;
-  -webkit-animation: loader_roll 3s linear infinite;
-  animation: loader_roll 3s linear infinite;
+  -webkit-animation: loader_roll 3s forwards;
+  animation: loader_roll 3s forwards;
 }
 
 #search {
@@ -275,19 +276,19 @@ a {
 }
 
 .heart-empty:hover {
-  animation: vide 0.3s forwards linear;
+  animation: 0.25s linear;
   cursor: pointer;
 }
 
 .heart-empty:hover + i {
   opacity: 1;
   transform: scale(1);
-  transition: transform 0.3s linear;
+  transition: 0.25s linear;
 }
 
 .heart-full {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   background: linear-gradient(to top, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
@@ -298,7 +299,7 @@ a {
 .restaurants .box-restaurant {
   position: relative;
   width: 90%;
-  height: 62vw;
+  height: 63vw;
   margin: auto;
   margin-top: 25px;
   border-radius: 15px;
@@ -378,7 +379,7 @@ a {
 .restaurant-name .heart-full {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(177deg, #FF79DA, #9356DC);
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
   font-size: 1.6rem;
   display: block;
   position: absolute;
@@ -457,8 +458,8 @@ a {
 .menu .choice-3 .price-check,
 .menu .choice-4 .price-check {
   display: flex;
-  align-self: center;
-  transform: translateX(60px);
+  align-items: center;
+  transform: translateX(70px);
 }
 
 .menu .choice-1:hover .price-check,
@@ -491,12 +492,12 @@ a {
 .menu .choice-2 .checkbox,
 .menu .choice-3 .checkbox,
 .menu .choice-4 .checkbox {
-  align-self: center;
+  display: flex;
+  align-items: center;
   padding: 25px;
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 10px;
 }
 
 .menu .choice-1:hover .checkbox,
