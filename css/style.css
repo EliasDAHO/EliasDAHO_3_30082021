@@ -43,14 +43,6 @@
     transform: translateY(0px);
   }
 }
-@keyframes checkslide {
-  0% {
-    transform: translateX(60px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 * {
   margin: 0;
 }
@@ -97,7 +89,7 @@ header .arrow {
   justify-content: center;
   text-align: center;
   display: flex;
-  margin-top: -5rem;
+  margin-top: -6rem;
   animation-delay: 3s;
   -webkit-animation: loader 3s forwards;
   animation: loader 3s forwards;
@@ -110,7 +102,7 @@ header .arrow {
   text-align: center;
   height: 300px;
   width: 300px;
-  margin-top: 3rem;
+  margin-top: 4rem;
   border-top: 15px solid #9256dc;
   border-right: 15px solid #ff79da;
   border-bottom: 15px solid #99e2d0;
@@ -276,14 +268,15 @@ a {
 }
 
 .heart-empty:hover {
-  animation: 0.25s linear;
+  animation: 0.3s linear;
   cursor: pointer;
 }
 
 .heart-empty:hover + i {
   opacity: 1;
   transform: scale(1);
-  transition: 0.25s linear;
+  transition: 0.3s linear;
+  cursor: pointer;
 }
 
 .heart-full {
@@ -453,66 +446,12 @@ a {
   animation: transition 0.8s ease-in 0.8s both;
 }
 
-.menu .choice-1 .price-check,
-.menu .choice-2 .price-check,
-.menu .choice-3 .price-check,
-.menu .choice-4 .price-check {
-  display: flex;
-  align-items: center;
-  transform: translateX(70px);
-}
-
-.menu .choice-1:hover .price-check,
-.menu .choice-2:hover .price-check,
-.menu .choice-3:hover .price-check,
-.menu .choice-4:hover .price-check {
-  -webkit-animation: checkslide 0.45s ease-in-out forwards;
-  animation: checkslide 0.45s ease-in-out forwards;
-}
-
-.menu .choice-1 .checkicon,
-.menu .choice-2 .checkicon,
-.menu .choice-3 .checkicon,
-.menu .choice-4 .checkicon {
-  display: inline-block;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.menu .choice-1:hover .checkicon,
-.menu .choice-2:hover .checkicon,
-.menu .choice-3:hover .checkicon,
-.menu .choice-4:hover .checkicon {
-  transform: rotate(1turn);
-  transition: 0.7s;
-}
-
-.menu .choice-1 .checkbox,
-.menu .choice-2 .checkbox,
-.menu .choice-3 .checkbox,
-.menu .choice-4 .checkbox {
-  display: flex;
-  align-items: center;
-  padding: 25px;
-  background-color: #99e2d0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.menu .choice-1:hover .checkbox,
-.menu .choice-2:hover .checkbox,
-.menu .choice-3:hover .checkbox,
-.menu .choice-4:hover .checkbox {
-  -webkit-animation: checkslide 0.45s ease-in-out forwards;
-  animation: checkslide 0.45s ease-in-out forwards;
-}
-
 .menu .menu-content {
   margin-left: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: "roboto", sans-serif;
 }
 
 .menu .menu-content h3,
@@ -526,11 +465,51 @@ a {
   font-family: "roboto", sans-serif;
 }
 
-.menu .price {
-  font-size: 0.85rem;
+.price-check {
+  display: flex;
+  font-size: 1rem;
   font-weight: bold;
-  align-self: flex-end;
-  margin: 10px 20px;
+  align-items: flex-end;
+  margin-bottom: -5px;
+}
+
+.price {
+  margin: 8px 20px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  background-color: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  max-width: 0;
+  overflow: hidden;
+  transition: all 0.4s linear;
+}
+
+.checkicon {
+  color: #FFFFFF;
+  font-size: 25px;
+  margin-top: 5px;
+  transition: all 0.4s linear;
+}
+
+.choice-1:hover .checkbox,
+.choice-2:hover .checkbox,
+.choice-3:hover .checkbox,
+.choice-4:hover .checkbox {
+  max-width: 70px;
+}
+
+.choice-1:hover .checkicon,
+.choice-2:hover .checkicon,
+.choice-3:hover .checkicon,
+.choice-4:hover .checkicon {
+  transform: rotate(1turn);
 }
 
 #button-commander {
@@ -544,7 +523,7 @@ a {
   font-weight: bold;
   margin-left: 27%;
   margin-top: 10%;
-  font-size: 1rem;
+  font-size: 0.95rem;
   background: linear-gradient(180deg, #ff79da 10%, #9256dc 90%);
   box-shadow: 3px 3px 10px #bfbfbf;
 }
@@ -688,6 +667,10 @@ footer ul li .fas {
     width: 94%;
   }
 
+  .price {
+    margin: 7px 20px;
+  }
+
   #button-commander {
     margin-left: 41%;
     margin-top: 3%;
@@ -739,13 +722,8 @@ footer ul li .fas {
     margin: 30px;
   }
 
-  .menu .menu-content h3,
-.menu .menu-content p {
-    font-size: 1em;
-  }
-
-  .menu .price {
-    font-size: 1em;
+  .price {
+    margin: 5px 20px;
   }
 
   #button-commander {
