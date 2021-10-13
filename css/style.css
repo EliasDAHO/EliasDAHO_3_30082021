@@ -102,7 +102,7 @@ header .arrow {
   text-align: center;
   height: 300px;
   width: 300px;
-  margin-top: 4rem;
+  margin-top: 6rem;
   border-top: 15px solid #9256dc;
   border-right: 15px solid #ff79da;
   border-bottom: 15px solid #99e2d0;
@@ -166,13 +166,13 @@ header .arrow {
   font-size: 0.8rem;
   margin: 20px 10px 40px 10px;
   background: linear-gradient(180deg, #ff79da 10%, #9256dc 90%);
-  box-shadow: 3px 3px 10px #bfbfbf;
+  box-shadow: 4px 4px 10px #bfbfbf;
 }
 
 .search-button:hover {
-  opacity: 0.9;
+  opacity: 0.85;
   transition: 0.3s;
-  box-shadow: 3px 3px 10px #0d0d0d;
+  box-shadow: 4px 4px 10px #0d0d0d;
   transition: 0.3s;
 }
 
@@ -282,7 +282,7 @@ a {
 .heart-full {
   position: absolute;
   opacity: 1;
-  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background: linear-gradient(180deg, #ff79da 10%, #9256dc 90%);
   -webkit-background-clip: text;
   color: transparent;
   transform-origin: padding;
@@ -296,7 +296,7 @@ a {
   margin: auto;
   margin-top: 25px;
   border-radius: 15px;
-  box-shadow: 3px 3px 10px #bfbfbf;
+  box-shadow: 4px 4px 10px #bfbfbf;
   background-color: #ffffff;
 }
 
@@ -372,7 +372,7 @@ a {
 .restaurant-name .heart-full {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  background-image: linear-gradient(180deg, #ff79da 10%, #9256dc 90%);
   font-size: 1.6rem;
   display: block;
   position: absolute;
@@ -492,7 +492,7 @@ a {
 }
 
 .checkicon {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 25px;
   margin-top: 5px;
   transition: all 0.4s linear;
@@ -513,25 +513,24 @@ a {
 }
 
 #button-commander {
+  display: block;
   cursor: pointer;
   opacity: 1;
   border: none;
   border-radius: 25px;
-  justify-content: center;
+  margin: 50px auto 50px auto;
   padding: 16px 50px;
   color: #ffffff;
   font-weight: bold;
-  margin-left: 27%;
-  margin-top: 10%;
-  font-size: 0.95rem;
+  font-size: 1rem;
   background: linear-gradient(180deg, #ff79da 10%, #9256dc 90%);
-  box-shadow: 3px 3px 10px #bfbfbf;
+  box-shadow: 4px 4px 10px #bfbfbf;
 }
 
 #button-commander:hover {
   opacity: 0.85;
   transition: 0.3s;
-  box-shadow: 3px 3px 10px #0d0d0d;
+  box-shadow: 4px 4px 10px #0d0d0d;
   transition: 0.3s;
 }
 
@@ -597,10 +596,6 @@ footer ul li .fas {
 
   .restaurant-title {
     margin-left: 3%;
-  }
-
-  #button-commander {
-    margin-left: 37%;
   }
 
   footer {
@@ -672,8 +667,7 @@ footer ul li .fas {
   }
 
   #button-commander {
-    margin-left: 41%;
-    margin-top: 3%;
+    font-size: 1.1rem;
   }
 
   footer {
@@ -727,8 +721,7 @@ footer ul li .fas {
   }
 
   #button-commander {
-    margin-left: 42.5%;
-    font-size: 1.2em;
+    margin-left: 43%;
   }
 }
 @media screen and (min-width: 2560px) {
