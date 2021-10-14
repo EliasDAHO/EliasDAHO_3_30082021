@@ -360,7 +360,6 @@ a {
 }
 
 .restaurant-name .heart-full {
-  background-color: linear-gradient(180deg, #ff79da 10%, #9256dc 90%);
   position: absolute;
   bottom: 7px;
   right: 28px;
