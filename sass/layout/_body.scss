@@ -173,7 +173,7 @@
     
   }
   .heart-empty:hover {
-    animation:  0.30s forwards linear  ;
+    animation: empty 0.30s forwards linear  ;
     cursor: pointer;
     z-index: 1;
     
@@ -192,8 +192,9 @@
     color: transparent;
     transform: scale(0);
     transform-origin: center;
-    
+  
   }
+
   .restaurants .box-restaurant {
     position: relative;
     width: 90%;
