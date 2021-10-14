@@ -266,7 +266,7 @@ a {
 }
 
 .heart-empty:hover {
-  animation: 0.2s forwards linear;
+  animation: 0.3s forwards linear;
   cursor: pointer;
   z-index: 1;
 }
@@ -274,12 +274,12 @@ a {
 .heart-empty:hover + i {
   opacity: 1;
   transform: scale(1);
-  transition: transform 0.2s linear;
+  transition: transform 0.3s linear;
 }
 
 .heart-full {
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   background: linear-gradient(180deg, #ff79da 10%, #9256dc 90%);
   -webkit-background-clip: text;
   color: transparent;
@@ -360,7 +360,7 @@ a {
 }
 
 .restaurant-name .heart-full {
-  color: linear-gradient(180deg, #ff79da 10%, #9256dc 90%);
+  background-color: linear-gradient(180deg, #ff79da 10%, #9256dc 90%);
   position: absolute;
   bottom: 7px;
   right: 28px;
