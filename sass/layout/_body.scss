@@ -162,35 +162,28 @@
     font-size: 1.6em;
     color: #777777;
   }
+  
+  
   .heart-full {
     position: absolute;
     bottom: 18px;
     right: 24px;
-    cursor: pointer;
     opacity: 0;
-    z-index: 1;
     font-size: 1.6em;
   }
-  .heart-empty:hover {
-    animation:  0.30s  linear;
-    cursor: pointer;
-  }
-  .heart-empty:hover + i {
-    opacity: 1;
-    transform: scale(1);
-    transition:  0.30s linear;
-    cursor: pointer;
-  }
-  .heart-full {
-    position: absolute;
-    opacity: 1;
-    background:$background-gradient;
+  .heart .heart-full:hover {
+    background: $background-gradient;
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    color: transparent;
-    transform-origin: padding;
-    transform: scale(0);
+    opacity: 1;
+    z-index: 999;
+    cursor: pointer;
     
   }
+  .heart .heart-empty:hover {
+    opacity: 0;
+  }
+
   .restaurants .box-restaurant {
     position: relative;
     width: 90%;
@@ -248,30 +241,30 @@
       position: relative;
     }
     .restaurant-name .heart-empty {
-    color: #777777;
-    position: absolute;
-    bottom: 7px;
-    right: 28px;
-    font-size: 1.6rem;
-  }
-  .restaurant-name .heart-full {
-    color: #777777;
-    position: absolute;
-    bottom: 7px;
-    right: 28px;
-    font-size: 1.6rem;
-  }
-  .restaurant-name .heart-full {
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: $background-gradient;
-    font-size: 1.6rem;
-    display: block;
-    position: absolute;
-    bottom: 7px;
-    right: 28px;
-    opacity: 0;
-  }
+      color: #777777;
+      position: absolute;
+      bottom: 7px;
+      right: 28px;
+      font-size: 1.6rem;
+    }
+    .restaurant-name .heart-full {
+      color: #777777;
+      position: absolute;
+      bottom: 7px;
+      right: 28px;
+      font-size: 1.6rem;
+    }
+    .restaurant-name .heart-full {
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-image: $background-gradient;
+      font-size: 1.6rem;
+      display: block;
+      position: absolute;
+      bottom: 7px;
+      right: 28px;
+      opacity: 0;
+    }
   .menu-title {
     text-transform: uppercase;
     font-size: 1em;
@@ -293,7 +286,6 @@
     flex-direction: column;
     align-items: center;
   }
-  
   .menu .choice-1,
   .menu .choice-2,
   .menu .choice-3,
@@ -315,19 +307,18 @@
     -webkit-animation: transition 0.2s ease-in  0.2s forwards;
     animation: transition 0.2s ease-in  0.2s both  ;
   }
-  
-  .choice-2{
+   .choice-2{
     transform: scale(0);
     -webkit-animation: transition 0.4s ease-in  0.4s forwards;
     animation: transition 0.4s ease-in  0.4s both ;
   }
   
-  .choice-3 {
+   .choice-3 {
     transform: scale(0);
     -webkit-animation: transition  0.6s ease-in 0.6s forwards;
     animation: transition 0.6s ease-in 0.6s both ;
   }
-  .choice-4 {
+   .choice-4 {
     transform: scale(0);
     -webkit-animation: transition 0.8s ease-in 0.8s forwards;
     animation: transition 0.8s ease-in 0.8s both  ;
