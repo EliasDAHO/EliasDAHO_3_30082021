@@ -161,8 +161,8 @@
     right: 24px;
     font-size: 1.6em;
     color: #777777;
+    
   }
-  
   
   .heart-full {
     position: absolute;
@@ -170,20 +170,37 @@
     right: 24px;
     opacity: 0;
     font-size: 1.6em;
-  }
-  .heart .heart-full:hover {
-    background: $background-gradient;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    opacity: 1;
-    z-index: 999;
-    cursor: pointer;
     
   }
-  .heart .heart-empty:hover {
-    opacity: 0;
+  .heart-empty:hover {
+    animation:  0.20s forwards linear  ;
+    cursor: pointer;
+    z-index: 1;
   }
+  .heart-empty:hover + i {
+    opacity: 1;
+    transform: scale(1);
+    transition:transform 0.20s linear ;
+    
+  }
+  .heart-full {
+    position: absolute;
+    opacity: 0;
+    background:$background-gradient;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+    transform: scale(0);
+    transform-origin: center;
+    
+  }
+    
 
+
+  
+  
+  
+  
   .restaurants .box-restaurant {
     position: relative;
     width: 90%;
@@ -237,34 +254,26 @@
       border-top-right-radius: 40px;
       position: relative;
       top: -35px;
-    } .restaurant-name .heart {
-      position: relative;
     }
-    .restaurant-name .heart-empty {
-      color: #777777;
-      position: absolute;
-      bottom: 7px;
-      right: 28px;
-      font-size: 1.6rem;
-    }
-    .restaurant-name .heart-full {
-      color: #777777;
-      position: absolute;
-      bottom: 7px;
-      right: 28px;
-      font-size: 1.6rem;
-    }
-    .restaurant-name .heart-full {
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-image: $background-gradient;
-      font-size: 1.6rem;
-      display: block;
-      position: absolute;
-      bottom: 7px;
-      right: 28px;
-      opacity: 0;
-    }
+  .restaurant-name .heart {
+    position: relative;
+  }
+  .restaurant-name .heart-empty {
+    color: #777777;
+    position: absolute;
+    bottom: 7px;
+    right: 28px;
+    font-size: 1.6em;
+  }
+  .restaurant-name .heart-full {
+    color: $background-gradient;
+    position: absolute;
+    bottom: 7px;
+    right: 28px;
+    font-size: 1.6em;
+  }
+  
+   
   .menu-title {
     text-transform: uppercase;
     font-size: 1em;
