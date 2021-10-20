@@ -1,6 +1,6 @@
 .loading-spinner {
   position: fixed;
-  background-color: $backgroundcolor-main;
+  background-color: #f6f6f6;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -10,10 +10,10 @@
   margin-top: -6rem;
   animation-delay: 3s;
   -webkit-animation: loader 3s forwards;
-          animation: loader 3s forwards;
+  animation: loader 3s forwards;
 }
 
-.loading-spinner::before {
+.loading-spinner::after {
   content: "";
   display: flex;
   justify-content: center;
@@ -21,13 +21,13 @@
   height: 300px;
   width: 300px;
   margin-top: 6rem;
-  border-top: 15px solid $color-primary ;
-  border-right:15px solid $color-secondary;
-  border-bottom: 15px solid $color-tertiary;
-  border-left: 15px solid $color-shadow;
+  border-top: 15px solid $color-primary;
+  border-right: 15px solid $color-secondary;
+  border-bottom: 15px solid $color-tertiary ;
+  border-left: 15px solid #bfbfbf;
   border-radius: 100%;
   -webkit-animation: loader_roll 3s forwards;
-          animation: loader_roll 3s forwards;
+  animation: loader_roll 3s forwards;
 }
 #search {
   text-align: center;
