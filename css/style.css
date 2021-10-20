@@ -6,31 +6,15 @@
     visibility: hidden;
   }
 }
-@keyframes loader {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
 @keyframes loader_roll {
   0% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
     opacity: 1;
   }
   100% {
-    opacity: 0;
-  }
-}
-@keyframes loader_roll {
-  0% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-    opacity: 1;
-  }
-  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
     opacity: 0;
   }
 }
@@ -106,7 +90,7 @@ header .arrow {
   animation: loader 3s forwards;
 }
 
-.loading-spinner::before {
+.loading-spinner::after {
   content: "";
   display: flex;
   justify-content: center;
